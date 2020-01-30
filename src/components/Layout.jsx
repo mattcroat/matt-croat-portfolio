@@ -1,15 +1,15 @@
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 import Header from './Header';
 
 function Layout(props) {
   return (
-    <ContainerStyle>
+    <>
       <GlobalStyle />
       <Header />
       {props.children}
-    </ContainerStyle>
+    </>
   );
 }
 
@@ -33,6 +33,9 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Playfair Display', sans-serif;
     color: var(--textLight);
+    background: hsl(0, 0%, 9%);
+    
+  /*
     background-image: url('https://images.unsplash.com/photo-1533331639-74f1863c7b3c');
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,6 +61,7 @@ const GlobalStyle = createGlobalStyle`
       opacity: 0.86;
       z-index: -1;
     }
+  */
   }
 
   a {
@@ -72,11 +76,6 @@ const GlobalStyle = createGlobalStyle`
   @keyframes slide-in {
     100% { transform: translateY(0%); }
   }
-`;
-
-const ContainerStyle = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
 `;
 
 export default Layout;
