@@ -7,7 +7,7 @@ import Layout from '../components/Layout';
 function About() {
   return (
     <Layout>
-    	<ContainerStyle>
+    	<AboutStyle>
        <h1>Who am I?</h1>
 
        <p>
@@ -27,12 +27,12 @@ function About() {
        	React, Gatsby, Next.js. I use Visual Studio Code as my editor, Figma for making designs, and Git
        	for version control.
        </p>    		
-    	</ContainerStyle>
+    	</AboutStyle>
     </Layout>
   );
 }
 
-const ContainerStyle = styled.div`
+const AboutStyle = styled.div`
 	max-width: 600px;
 	margin: 0 auto;
 	margin-top: 10rem;
