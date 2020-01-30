@@ -23,7 +23,7 @@ function About() {
        </p>
 
        <p>
-       	Some of the tools, and technologies I use include HTML, CSS, JavaScript,
+       	Some of the tools, and web technologies I use include HTML, CSS, JavaScript,
        	React, Gatsby, Next.js. I use Visual Studio Code as my editor, Figma for making designs, and Git
        	for version control.
        </p>    		
@@ -33,9 +33,14 @@ function About() {
 }
 
 const AboutStyle = styled.div`
-	max-width: 600px;
+	max-width: 500px;
 	margin: 0 auto;
 	margin-top: 10rem;
+
+  @media (max-width: 640px) {
+    width: 90%;
+    margin-top: 6rem;
+  }
 
 	h1 {
 		font-size: 3rem;
