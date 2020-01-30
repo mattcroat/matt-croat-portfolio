@@ -1,18 +1,28 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import Layout from '../components/Layout';
 
 function Contact() {
   return (
     <Layout>
-      <div>
-        <h1>I'd love to talk! Email me at the address below</h1>
-        <p>
-          <a href="mailto:me@example.com">me@example.com</a>
-        </p>
-      </div>
+      <ContactStyle>
+        <h1>
+          I'd love to talk! <a href="mattcroat.dev@gmail.com">Email me.</a>
+        </h1>
+      </ContactStyle>
     </Layout>
   );
 }
+
+const ContactStyle = styled.div`
+  text-align: center;
+  margin-top: 10rem;
+
+  h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+  }
+`;
 
 export default Contact;
