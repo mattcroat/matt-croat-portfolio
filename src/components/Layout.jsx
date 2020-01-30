@@ -16,7 +16,8 @@ function Layout(props) {
 const GlobalStyle = createGlobalStyle`
   :root {
     --textLight: hsl(0, 0%, 98%);
-    --brandRed: #ec0000;
+    --textFaded: hsl(0, 0%, 80%);
+    --brandRed:  hsl(0, 100%, 46.3%);
   }
 
   *, *::before, *::after {

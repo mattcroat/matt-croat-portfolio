@@ -4,7 +4,12 @@ import { Link } from 'gatsby';
 function ListLink(props) {
   return (
     <li>
-      <Link to={props.to}>{props.children}</Link>
+      <Link
+      	activeStyle={{ color: 'hsl(0, 0%, 98%)' }}
+      	to={props.to}
+      >
+      	{props.children}
+      </Link>
     </li>
   );
 }

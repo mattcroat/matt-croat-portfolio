@@ -37,7 +37,7 @@ const HeaderStyle = styled.header`
 
       a {
         font-size: 1.8rem;
-        color: var(--textLight);
+        color: var(--textFaded);
         text-decoration: none;
         letter-spacing: 1px;
         position: relative;
