@@ -32,6 +32,21 @@ const HeaderStyle = styled.header`
     display: flex;
     justify-content: space-evenly;
 
+    @media (max-width: 600px) {
+      display: block;
+      text-align: center;
+
+      li {
+        margin: 1rem 0;
+        border-bottom: 1px solid hsla(0, 0%, 98%, 0.1);
+        padding: 1rem;
+      }
+
+      svg {
+        display: none;
+      }
+    }
+
     li {
       align-self: center;
 

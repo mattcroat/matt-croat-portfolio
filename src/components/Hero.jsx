@@ -49,6 +49,13 @@ const HeroStyle = styled.div`
   align-items: center;
   animation: fade-in 2s;
 
+  @media (max-width: 600px) {
+    max-width: 450px;
+    flex-direction: column;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+  }
+
   h1 {
     font-weight: 300;
     letter-spacing: 0.2px;
@@ -89,6 +96,11 @@ const CardsStyle = styled.div`
   transform: translateY(50%);
   animation: fade-in 2s, slide-in 1s forwards;
 
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   a {
     display: inline-block;
     width: 320px;
@@ -97,8 +109,17 @@ const CardsStyle = styled.div`
     position: relative;
     background-image: url('https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5');
     background-size: cover;
+    background-position: center center;
     border-radius: 2%;
     transition: transform 0.4s;
+
+    @media (max-width: 1000px) {
+      width: 70%;
+    }
+
+    @media (max-width: 600px) {
+      width: 90%;
+    }
 
     &::after {
       content: '';
@@ -116,6 +137,10 @@ const CardsStyle = styled.div`
       transform: scale(1.4);
       box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       z-index: 3;
+
+      @media (max-width: 1000px) {
+        transform: scale(1.02);
+      }
 
       &::after {
         opacity: 0;
