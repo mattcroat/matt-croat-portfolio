@@ -15,7 +15,7 @@ import volumen from '../images/mockups/volumen.png'
 function Design() {
   return (
     <Layout>
-    	<Container>
+    	<ContainerStyle>
 		    <MockupCard>
 		    	<h2>Vintage</h2>
 		    	<img src={vintage01} alt="Vintage"/>
@@ -47,13 +47,13 @@ function Design() {
 		    	<h2>Crypto Dashboard</h2>
 		    	<img src={cryptoDashboard} alt="Crypto dashboard"/>
 		    </MockupCard>
-    	</Container>
+    	</ContainerStyle>
     </Layout>
   );
 }
 
-const Container = styled.div`
-	width: 800px;
+const ContainerStyle = styled.div`
+	max-width: 800px;
 	margin: 0 auto;
 	margin-top: 6rem;
 `;

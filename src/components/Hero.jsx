@@ -44,7 +44,7 @@ const HeroStyle = styled.div`
   max-width: 700px;
   margin: 0 auto;
   margin-top: 10rem;
-  font-size: 20px;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   animation: fade-in 2s;
