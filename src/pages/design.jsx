@@ -56,13 +56,22 @@ const DesignStyle = styled.div`
 	max-width: 800px;
 	margin: 0 auto;
 	margin-top: 6rem;
+
+	@media (max-width: 900px) {
+		margin: 0;
+	}
 `;
 
 const MockupCard = styled.figure`
 	margin-top: 4rem;
 
+	@media (max-width: 900px) {
+		margin-top: 2rem;
+		padding: 2rem;
+	}
+
 	h2 {
-		font-size: 4rem;
+		font-size: 4vmin;
 		font-weight: 300;
 		letter-spacing: 0.4px;
 		text-align: center;
