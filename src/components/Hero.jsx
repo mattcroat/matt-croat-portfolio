@@ -49,6 +49,12 @@ const HeroStyle = styled.div`
   align-items: center;
   animation: fade-in 2s;
 
+  @media (max-width: 1000px) {
+    width: 90%;
+    flex-direction: column;
+    margin-top: 6rem;
+  }
+
   @media (max-width: 600px) {
     max-width: 450px;
     flex-direction: column;
