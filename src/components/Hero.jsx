@@ -1,5 +1,11 @@
+import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
+
+import avatar from '../images/avatar/flame.png'
+import kicks from '../images/projects/sick-kicks.png';
+import bistro from '../images/projects/bistro.png';
+import surf from '../images/projects/surf.png';
 
 function Hero() {
 	return (
@@ -11,7 +17,7 @@ function Hero() {
           <div>
             <h1>Hi, I'm Matija. I'm a <span>front-end</span> developer with a passion for <span>UI/UX design</span>.</h1>
             <h2>
-              <a href="#">Let's talk</a> and bring your ideas to life.
+              <Link to="/contact">Let's talk</Link> and bring your ideas to life.
             </h2>
           </div>
         </HeroStyle>
@@ -22,16 +28,31 @@ function Hero() {
           <h2>Latest Projects</h2>
 
           <CardsStyle>
-            <a href="#">
-              <h3>Project Card</h3>
+            <a
+              className="project-1"
+              href="https://sick-kicks.netlify.com"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <h3>Sick Kicks · shop</h3>
             </a>
 
-            <a href="#">
-              <h3>Project Card</h3>
+            <a
+              className="project-2"
+              href="https://amorebistro.netlify.com"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <h3>Bistro · restaurant</h3>
             </a>
 
-            <a href="#">
-              <h3>Project Card</h3>
+            <a
+              className="project-3"
+              href="https://surfsup.netlify.com"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <h3>Surf · landing page</h3>
             </a>
           </CardsStyle>
         </ProjectsStyle>
@@ -47,7 +68,7 @@ const HeroStyle = styled.div`
   font-size: 2rem;
   display: flex;
   align-items: center;
-  animation: fade-in 2s;
+	animation: var(--shortFade);
 
   @media (max-width: 1000px) {
     width: 90%;
@@ -78,20 +99,21 @@ const AvatarStyle = styled.div`
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-image: url('https://images.unsplash.com/photo-1520975764749-7397d17130a2');
+    /* background-image: url('https://images.unsplash.com/photo-1520975764749-7397d17130a2'); */
+    background-image: url(${avatar});
     background-size: cover;
 `;
 
 const ProjectsStyle = styled.div`
+  font-family: var(--sansSerif);
   margin: 0 auto;
   margin-top: 8rem;
 
   h2 {
     font-size: 2.4rem;
     text-align: center;
-    font-weight: 900;
     letter-spacing: 1px;
-    animation: fade-in 2s;
+    animation: var(--shortFade);
   }
 `;
 
@@ -100,7 +122,8 @@ const CardsStyle = styled.div`
   display: flex;
   justify-content: center;
   transform: translateY(50%);
-  animation: fade-in 2s, slide-in 1s forwards;
+	animation: var(--shortFade), slide-in 1s forwards;
+
 
   @media (max-width: 1000px) {
     flex-direction: column;
@@ -113,11 +136,16 @@ const CardsStyle = styled.div`
     height: 200px;
     margin: 0.4rem;
     position: relative;
-    background-image: url('https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5');
+    /* background-image: url('https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5'); */
     background-size: cover;
     background-position: center center;
     border-radius: 2%;
     transition: transform 0.4s;
+    overflow: hidden;
+
+    &.project-1 { background-image: url(${kicks}); }
+    &.project-2 { background-image: url(${bistro}); }
+    &.project-3 { background-image: url(${surf}); }
 
     @media (max-width: 1000px) {
       width: 70%;
@@ -153,15 +181,21 @@ const CardsStyle = styled.div`
       }
     }
 
+    &:hover h3 {
+      opacity: 0;
+    }
+
     h3 {
       font-size: 1.6rem;
       position: absolute;
       left: 4%;
       bottom: 4%;
       text-transform: uppercase;
+      font-weight: 900;
       color: var(--textLight);
       z-index: 2;
       letter-spacing: 1px;
+      transition: opacity 1s;
     }
   }
 `;

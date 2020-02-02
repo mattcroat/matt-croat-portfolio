@@ -56,6 +56,7 @@ const DesignStyle = styled.div`
 	max-width: 800px;
 	margin: 0 auto;
 	margin-top: 6rem;
+	animation: var(--shortFade);
 
 	@media (max-width: 900px) {
 		margin: 0;

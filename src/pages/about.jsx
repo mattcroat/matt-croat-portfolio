@@ -36,6 +36,7 @@ const AboutStyle = styled.div`
 	max-width: 500px;
 	margin: 0 auto;
 	margin-top: 10rem;
+	animation: var(--shortFade);
 
   @media (max-width: 640px) {
     width: 90%;
@@ -47,8 +48,9 @@ const AboutStyle = styled.div`
 	}
 
 	p {
+		font-family: var(--sansSerif);
 		font-size: 2rem;
-		letter-spacing: 1px;
+		letter-spacing: 0.4px;
 		margin-top: 3rem;
 		line-height: 1.5;
 	}

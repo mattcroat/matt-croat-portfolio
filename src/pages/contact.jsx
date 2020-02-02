@@ -17,8 +17,10 @@ function Contact() {
 }
 
 const ContactStyle = styled.div`
+	font-family: var(--sansSerif);
   margin-top: 10rem;
-  text-align: center;  
+  text-align: center;
+	animation: var(--shortFade);
 
   svg {
     fill: hsl(0, 0%, 98%);

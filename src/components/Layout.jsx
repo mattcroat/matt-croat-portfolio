@@ -18,6 +18,9 @@ const GlobalStyle = createGlobalStyle`
     --textLight: hsl(0, 0%, 98%);
     --textFaded: hsl(0, 0%, 80%);
     --brandRed:  hsl(0, 100%, 46.3%);
+    --sansSerif: 'Poppins', 'sans-serif';
+    --serif: 'Playfair Display', 'serif';
+    --shortFade: fade-in 1s;
   }
 
   *, *::before, *::after {
@@ -31,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Playfair Display', sans-serif;
+    font-family: var(--serif);
     color: var(--textLight);
     background: hsl(0, 0%, 9%);
     

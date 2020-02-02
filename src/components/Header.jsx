@@ -26,6 +26,7 @@ const HeaderStyle = styled.header`
   max-width: 600px;
   margin: 0 auto;
   margin-top: 2rem;
+  font-family: var(--sansSerif);
 
   nav ul {
     list-style: none;
@@ -51,7 +52,7 @@ const HeaderStyle = styled.header`
       align-self: center;
 
       a {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         color: var(--textFaded);
         text-decoration: none;
         letter-spacing: 1px;
@@ -61,8 +62,8 @@ const HeaderStyle = styled.header`
           content: '#';
           color: var(--brandRed);
           position: absolute;
-          font-size: 2.4rem;
-          left: -28%;
+          font-size: 1.8rem;
+          left: -30%;
           bottom: -12%;
         }
       }

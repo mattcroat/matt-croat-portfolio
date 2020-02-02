@@ -9492,6 +9492,11 @@ typeface-playfair-display@^0.0.72:
   resolved "https://registry.yarnpkg.com/typeface-playfair-display/-/typeface-playfair-display-0.0.72.tgz#1e82434340d83a496abc5c2c9d086bfc0a6c3741"
   integrity sha512-iXf4FcXNI/OLxHQQ72/7gXuu34fiX6DttlB8uruNu971AXgwr2OL6GWS5efRXrEwA35M0adVvXe4hKZWVwao5Q==
 
+typeface-poppins@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-poppins/-/typeface-poppins-0.0.72.tgz#3262d6533dea2e99a5cafb3be7d8fa876e105206"
+  integrity sha512-FgzdU4XfGYc4aTq6WZD9FC+le4Foz6cyzjdjDvVnQePTQSUD0dkrXiVaTK/cyNVXQrEl2ykV39PxeKeFqqkrTA==
+
 ua-parser-js@^0.7.18:
   version "0.7.21"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.21.tgz#853cf9ce93f642f67174273cc34565ae6f308777"
