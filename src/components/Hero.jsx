@@ -25,7 +25,7 @@ function Hero() {
 
       <section>
         <ProjectsStyle>
-          <h2>Latest Projects</h2>
+          <h2>Latest Projects — <a href="https://github.com/mattcroat/">GitHub</a></h2>
 
           <CardsStyle>
             <a
@@ -121,9 +121,8 @@ const CardsStyle = styled.div`
   margin-top: 1rem;
   display: flex;
   justify-content: center;
-  transform: translateY(50%);
-	animation: var(--shortFade), slide-in 1s forwards;
-
+  /* transform: translateY(50%); */
+	/* animation: var(--shortFade), slide-in 1s forwards; */
 
   @media (max-width: 1000px) {
     flex-direction: column;
@@ -143,9 +142,24 @@ const CardsStyle = styled.div`
     transition: transform 0.4s;
     overflow: hidden;
 
-    &.project-1 { background-image: url(${kicks}); }
-    &.project-2 { background-image: url(${bistro}); }
-    &.project-3 { background-image: url(${surf}); }
+    transform: translateY(50%);
+    animation: var(--shortFade), slide-in 1s forwards;
+
+
+    &.project-1 {
+      background-image: url(${kicks});
+      animation-duration: 1s;
+    }
+    
+    &.project-2 {
+      background-image: url(${bistro});
+      animation-duration: 1.2s;
+    }
+    
+    &.project-3 {
+      background-image: url(${surf});
+      animation-duration: 1.4s;
+    }
 
     @media (max-width: 1000px) {
       width: 70%;
