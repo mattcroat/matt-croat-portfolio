@@ -15,9 +15,13 @@ function Hero() {
           <AvatarStyle />
 
           <div>
-            <h1>Hi, I'm Matija. I'm a <span>front-end</span> developer with a passion for <span>UI/UX design</span>.</h1>
+            <h1>
+              Hi, I'm Matija. I'm a <span>front-end</span> developer with a
+              passion for <span>UI/UX design</span>.
+            </h1>
             <h2>
-              <Link to="/contact">Let's talk</Link> and bring your ideas to life.
+              <Link to="/contact">Let's talk</Link> and bring your ideas to
+              life.
             </h2>
           </div>
         </HeroStyle>
@@ -25,7 +29,16 @@ function Hero() {
 
       <section>
         <ProjectsStyle>
-          <h2>Latest Projects — <a href="https://github.com/mattcroat/">GitHub</a></h2>
+          <h2>
+            Latest Projects —&nbsp;
+            <a
+              href="https://github.com/mattcroat/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              GitHub
+            </a>
+          </h2>
 
           <CardsStyle>
             <div className="project-card">
@@ -64,7 +77,7 @@ function Hero() {
         </ProjectsStyle>
       </section>
     </main>
-	);
+  );
 }
 
 const HeroStyle = styled.div`
