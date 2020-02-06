@@ -3,14 +3,14 @@ import styled from 'styled-components';
 
 import Layout from '../components/Layout';
 
-import cryptoDashboard from '../images/mockups/crypto-dashboard.png'
+import cryptoDashboard from '../images/mockups/crypto-dashboard.jpg'
 import cuisine from '../images/mockups/cuisine.jpg'
-import dogue from '../images/mockups/dogue.png'
-import musicPlayer from '../images/mockups/music-app.png'
-import vintage01 from '../images/mockups/vintage-01.png'
-import vintage02 from '../images/mockups/vintage-02.png'
-import vintage03 from '../images/mockups/vintage-03.png'
-import volumen from '../images/mockups/volumen.png'
+import dogue from '../images/mockups/dogue.jpg'
+import musicPlayer from '../images/mockups/music-app.jpg'
+import vintage01 from '../images/mockups/vintage-01.jpg'
+import vintage02 from '../images/mockups/vintage-02.jpg'
+import vintage03 from '../images/mockups/vintage-03.jpg'
+import volumen from '../images/mockups/volumen.jpg'
 
 function Design() {
   return (

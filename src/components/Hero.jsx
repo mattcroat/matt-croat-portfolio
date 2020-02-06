@@ -2,10 +2,10 @@ import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 
-import avatar from '../images/avatar/flame.png'
-import kicks from '../images/projects/sick-kicks.png';
-import bistro from '../images/projects/bistro.png';
-import surf from '../images/projects/surf.png';
+import avatar from '../images/avatar/flame.jpg'
+import kicks from '../images/projects/sick-kicks.jpg';
+import bistro from '../images/projects/bistro.jpg';
+import surf from '../images/projects/surf.jpg';
 
 function Hero() {
 	return (
