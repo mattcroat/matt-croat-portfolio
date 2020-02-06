@@ -124,7 +124,6 @@ const AvatarStyle = styled.div`
 `;
 
 const ProjectsStyle = styled.div`
-  font-family: var(--sansSerif);
   margin: 0 auto;
   margin-top: 8rem;
 

@@ -18,8 +18,7 @@ const GlobalStyle = createGlobalStyle`
     --textLight: hsl(0, 0%, 98%);
     --textFaded: hsl(0, 0%, 80%);
     --brandRed:  hsl(0, 100%, 46.3%);
-    --sansSerif: 'Poppins', 'sans-serif';
-    --serif: 'Playfair Display', 'serif';
+    --fontStack: 'Poppins', 'sans-serif';
     --shortFade: fade-in 1s;
   }
 
@@ -34,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: var(--serif);
+    font-family: var(--fontStack);
     color: var(--textLight);
     background: hsl(0, 0%, 9%);
     

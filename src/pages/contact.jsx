@@ -17,7 +17,6 @@ function Contact() {
 }
 
 const ContactStyle = styled.div`
-	font-family: var(--sansSerif);
   margin-top: 10rem;
   text-align: center;
 	animation: var(--shortFade);

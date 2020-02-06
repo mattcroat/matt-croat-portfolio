@@ -26,7 +26,6 @@ const HeaderStyle = styled.header`
   max-width: 600px;
   margin: 0 auto;
   margin-top: 2rem;
-  font-family: var(--sansSerif);
 
   nav ul {
     list-style: none;

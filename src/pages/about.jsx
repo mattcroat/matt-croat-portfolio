@@ -48,7 +48,6 @@ const AboutStyle = styled.div`
 	}
 
 	p {
-		font-family: var(--sansSerif);
 		font-size: 2rem;
 		letter-spacing: 0.4px;
 		margin-top: 3rem;
