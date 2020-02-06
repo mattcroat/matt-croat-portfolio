@@ -1,8 +1,5 @@
+# Portfolio
+
 This is my personal portfolio.
 
-Todo:
-
-* [] SEO
-* [] Gatsby Image
-* [] Custom 404 Page 
-* [] Google Analytics
+![Portfolio](https://i.imgur.com/OmLrbTI.png "Portfolio")
