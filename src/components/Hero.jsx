@@ -81,13 +81,14 @@ function Hero() {
 }
 
 const HeroStyle = styled.div`
-  max-width: 700px;
+  max-width: 740px;
   margin: 0 auto;
   margin-top: 10rem;
   font-size: 2rem;
   display: flex;
   align-items: center;
 	animation: var(--shortFade);
+  line-height: 34px;
 
   @media (max-width: 1000px) {
     width: 90%;
@@ -109,6 +110,11 @@ const HeroStyle = styled.div`
     span {
       font-weight: 900;
     }
+  }
+
+  h2 {
+    margin-top: 1rem;
+    font-weight: 300;
   }
 `;
 
